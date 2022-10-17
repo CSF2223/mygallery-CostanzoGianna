@@ -30,6 +30,22 @@ header {
     font-size: 1.1rem;
 }
 
+header:hover {
+  background-color:pink;
+}
+
+h1:hover {
+  background-color:white;
+}
+
+h4:hover {
+  background-color:white;
+}
+
+h6:hover {
+  background-color:white;
+}
+
 body {
     background-color: #FFE3E1;
     color: #EA047E;
