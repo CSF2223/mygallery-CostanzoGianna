@@ -1,7 +1,123 @@
 /*
 Color Palette:
-background color:  
-font color:        
-secondary color:   
-tertiary color:    
+background color:  #FFE3E1
+font color:      #EA047E  
+secondary color:   #FF577F
+tertiary color:    #B1B2FF
 */
+
+/* CSS syntax notes:
+    selector {property: value;}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+html {
+    font-size: 62.5%    /* Default font size is 16px - 62.5% of 16 is 10px-
+                        1 rem (relative unit) now will be equivalent to 10px} */
+}
+
+header {
+    margin: 0 4rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #826F66;
+    border-right: 1px solid #826F66;
+    border-left: 1px solid #826F66;
+    padding: 0.5rem;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+header:hover {
+  background-color:pink;
+}
+
+h1:hover {
+  background-color:white;
+}
+
+h4:hover {
+  background-color:white;
+}
+
+h6:hover {
+  background-color:white;
+}
+
+body {
+    background-color: #FFE3E1;
+    color: #EA047E;
+    font-family: 'Playfair Display', sans-serif;
+    margin: 0;
+}
+
+cite {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.imageCard {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 4rem;
+}
+
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imageCard a {
+    text-decoration: none;
+    color: #B1B2FF;
+}
+
+.cardText {
+    color: #EA047E;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+img:hover {
+  transform: scaleX(-1);
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: 1.6rem;
+    }
+    
+    .gallery {
+        display:  flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .imageCard {
+        max-width: 28%;
+    }
+}
